@@ -17,13 +17,16 @@ REQUIREMENTS:
 
 - Supabase
 
-**INSTRUCTONS**
+**INSTRUCTONS:**
 
-do the following command in your python environent:
+1. Do the following command in your Python environment:
 
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-pip install requirements.txt -r
+2. Run the application:
 
-run the following file:
-
-EducationApp.py
+   ```bash
+   python EducationApp.py
+   ```
