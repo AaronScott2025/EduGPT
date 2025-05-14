@@ -7,15 +7,15 @@ EduGPT is a Flask Application for an education app powered by AI, designed for u
 **How do I run it❓**
 REQUIREMENTS:
 
-Ollama (https://ollama.com/)
+- Ollama (https://ollama.com/)
 
-Python 3.10+
+= Python 3.10+
 
-A stable Internet connection.
+- A stable Internet connection.
 
-Langchain
+- Langchain
 
-Supabase
+- Supabase
 
 **INSTRUCTONS**
 
