@@ -5,6 +5,7 @@
 EduGPT is a Flask Application for an education app powered by AI, designed for users who want to hone in on a topic to study, and gives them the resources to succeed in it. 
 
 **How do I run it❓**
+
 REQUIREMENTS:
 
 - Ollama (https://ollama.com/)
