@@ -31,3 +31,9 @@ EduGPT is a Flask Application for an education app powered by AI, designed for u
    ```bash
    python EducationApp.py
    ```
+
+
+
+IN CASE SYSTEM DOESNT WORK:
+
+https://www.youtube.com/watch?v=qyUYB20FTUc
