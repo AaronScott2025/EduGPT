@@ -1,0 +1,6 @@
+langchain~=0.3.24
+langchain-community~=0.3.23
+requests~=2.32.3
+ollama~=0.4.8
+Flask~=3.1.0
+supabase~=2.15.1

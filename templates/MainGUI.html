@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Something New</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Overall body styling */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Card container styling */
+    .container {
+      background: #fff;
+      padding: 1.5em 2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 320px;
+    }
+
+    h1 {
+      margin-bottom: 1em;
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    /* Input textbox and dropdown styling */
+    input[type="text"], select {
+      width: 100%;
+      padding: 0.6em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 0.9em;
+      box-sizing: border-box;
+      align-items: center;
+    }
+
+    /* Submit button styling */
+    button[type="submit"] {
+      width: 100%;
+      background-color: #5c6bc0;
+      color: #fff;
+      padding: 0.6em;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Loading overlay styling */
+    #loading {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 1000;
+    }
+
+    /* Spinner styling */
+    #loading .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border: 4px solid #ccc;
+      border-top: 4px solid #5c6bc0;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Enter what you want to learn about</h1>
+    <form id="inputForm" action="/Courses" method="get">
+      <label for="query">Topic:</label>
+      <input type="text" id="query" name="query" placeholder="Type here..." required>
+
+      <label for="proficiency">Proficiency Level:</label>
+      <select id="proficiency" name="proficiency">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+
+  <script>
+    document.getElementById('inputForm').addEventListener('submit', function (event) {
+      document.getElementById('loading').style.display = 'block';
+    });
+
+    window.addEventListener('load', function () {
+      document.getElementById('loading').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
