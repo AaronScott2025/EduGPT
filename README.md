@@ -9,7 +9,7 @@ REQUIREMENTS:
 
 - Ollama (https://ollama.com/)
 
-= Python 3.10+
+- Python 3.10+
 
 - A stable Internet connection.
 
